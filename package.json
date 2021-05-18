@@ -1,7 +1,7 @@
 {
-  "name": "@nestjs/schematics",
+  "name": "@sidhommoez/nest-schematics-templates",
   "version": "7.3.1",
-  "description": "Nest - modern, fast, powerful node.js web framework (@schematics)",
+  "description": "a fork of nestjs/schematics (@schematics)",
   "main": "dist/index.js",
   "files": [
     "dist/**/*"
