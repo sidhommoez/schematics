@@ -59,8 +59,15 @@ function resolvePackageName(path: string) {
   return name;
 }
 
+
 function generate(options: ApplicationOptions, path: string): Source {
-  return apply(url(join('./files' as Path, options.language)), [
+  let templatePath: string = null;
+  if (options.template === 'typeorm') {
+    templatePath = 'typeORM';
+  }else{
+    templatePath = 'default'
+  }
+  return apply(url(join('./files' as Path, options.language,templatePath)), [
     template({
       ...strings,
       ...options,

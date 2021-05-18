@@ -35,4 +35,8 @@ export interface ApplicationOptions {
    * Nest included development dependencies (comma separated values).
    */
   devDependencies?: string;
+  /**
+   * The used package manager.
+   */
+  template?: string;
 }
